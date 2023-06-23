@@ -1,5 +1,3 @@
-# Code test for data engineering candidates
-
 ## Steps to use using the images in the git repo
 
 1. Install Docker
@@ -27,8 +25,6 @@
     ```
 
 4. Running example scripts
-    
-    We have provided example code written in C, Node, Python, and R. These show how to use a programme in a separate Docker container to connect to the database, using an ORM library where appropriate, to load data from a CSV file, and to query data to output as a JSON file. There should be regarded as illustrative; it is fine to use any of these examples as the basis of your own solution, but we would prefer that you use technologies that you feel comfortable with.
 
     a. Make sure the MySQL database is running, and then load the example schema with:
     ```
@@ -39,7 +35,8 @@
     ```
     docker compose run python-solution
     ```
-    d. In each case, the programme loads data from the data/example.csv file into that table, and exports data from the database table to a JSON file in the data folder. Note that the scripts do not truncate the table, so each one you run will add additional content.
+    d. In each case, the program loads data from the data/example.csv file into that table, and exports data from the database table to a JSON file in the data folder. Note that the scripts do not truncate the table, so each one you run will add additional content.
+
 5. Cleaning up
 
     To tidy up, bringing down all the containers and deleting them, run `docker compose down`.
